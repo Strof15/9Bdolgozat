@@ -1,3 +1,39 @@
+
+C:\Users\tanulo>color 5
+
+C:\Users\tanulo>git clone C:\9.b\nagy kristof\Dolgozat\9Bdolgozat
+Cloning into 'kristof\Dolgozat\9Bdolgozat'...
+fatal: 'C:\9.b\nagy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\tanulo>git init
+Reinitialized existing Git repository in C:/Users/tanulo/.git/
+
+C:\Users\tanulo>C:\9.b\nagy kristof\Dolgozat\9Bdolgozat
+'C:\9.b\nagy' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\tanulo>copy con dologzat.txt
+asd
+^Z
+        1 file(s) copied.
+
+C:\Users\tanulo>cd C:\9.b\nagy kristof\Dolgozat\9Bdolgozat
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git init
+Reinitialized existing Git repository in C:/9.b/nagy kristof/Dolgozat/9Bdolgozat/.git/
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git clone C:\9.b\nagy kristof\Dolgozat\9Bdolgozat
+Cloning into 'kristof\Dolgozat\9Bdolgozat'...
+fatal: 'C:\9.b\nagy' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
 C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git clone https://github.com/Strof15/9Bdolgozat.git
 Cloning into '9Bdolgozat'...
 warning: You appear to have cloned an empty repository.
@@ -54,5 +90,93 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git add *
 
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   dolgozat.txt
+
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git commit -m "dolgozat.txt"
+[master 7555bde] dolgozat.txt
+ 1 file changed, 58 insertions(+)
+ create mode 100644 dolgozat.txt
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git push origin master
+Username for 'https://github.com': Strof15
+Password for 'https://Strof15@github.com':
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.10 KiB | 376.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Strof15/9Bdolgozat.git
+ * [new branch]      master -> master
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git log
+commit 7555bde9f5c017bbc6e6dd152d691d37760d9564 (HEAD -> master, origin/master)
+Author: Strof15 <rolandcsiha@gmail.com>
+Date:   Tue Oct 6 09:44:54 2020 +0200
+
+    dolgozat.txt
+
+commit d95d93dd9a352581b11f5e3e6603727c112f9de8
+Author: Strof15 <rolandcsiha@gmail.com>
+Date:   Tue Oct 6 09:42:19 2020 +0200
+
+    utasitasok
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>color 5
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   "utas\303\255t\303\241sok.txt"
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git add *
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   "utas\303\255t\303\241sok.txt"
+
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git commit -m "NagyKristof"
+[master b3a19ab] NagyKristof
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>git push origin master
+Username for 'https://github.com': Strof15
+Password for 'https://Strof15@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Strof15/9Bdolgozat.git
+   7555bde..b3a19ab  master -> master
+
+C:\9.b\nagy kristof\Dolgozat\9Bdolgozat>
